@@ -1,6 +1,6 @@
 @use '../abstracts/mixin' as *;
 @use '../abstracts/colors' as *;
-
+@use '../base/reset';
 
 .header {
 	position: relative;
@@ -43,11 +43,14 @@
 	}
 }
 
-// =======================================
-// MEDIA
-// =======================================
+// --------MEDIA----------
 
 @media (min-width: 768px) {
+	.white-block {
+		height: 50px;
+		width: 45%;
+	}
+
 	.header {
 		&__heading {
 			font-size: 6.6rem;
