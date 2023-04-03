@@ -1,3 +1,9 @@
-@forward 'components';
-@forward 'colors';
-@forward 'mixins';
+@forward './abstracts/mixin';
+@forward './abstracts/colors';
+
+@forward './base/reset';
+
+@forward './layout/navigation';
+@forward './layout/header';
+
+@forward './components/components';
