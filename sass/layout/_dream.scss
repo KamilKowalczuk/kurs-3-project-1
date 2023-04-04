@@ -2,6 +2,7 @@
 @use '../abstracts/colors' as *;
 @use '../base/reset';
 
+
 .dreams {
 	&__box {
 		display: flex;
@@ -23,64 +24,64 @@
 	}
 }
 
-@media (min-width: 576px) {
-	.dreams {
-		&__box {
-			flex-direction: row;
-			justify-content: space-between;
+// @media (min-width: 576px) {
+// 	.dreams {
+// 		&__box {
+// 			flex-direction: row;
+// 			justify-content: space-between;
 
-			&-text {
-				width: 55%;
+// 			&-text {
+// 				width: 55%;
 
-				&--right {
-                    width: 40%;
-					text-align: right;
-				}
-			}
+// 				&--right {
+//                     width: 40%;
+// 					text-align: right;
+// 				}
+// 			}
 
-			&-img {
-				width: 40%;
+// 			&-img {
+// 				width: 40%;
 
-				&--right {
-					order: 1;
-				}
-			}
-		}
+// 				&--right {
+// 					order: 1;
+// 				}
+// 			}
+// 		}
 
-		&__img {
-			margin-bottom: 0;
-			max-height: 300px;
-		}
-	}
-}
+// 		&__img {
+// 			margin-bottom: 0;
+// 			max-height: 300px;
+// 		}
+// 	}
+// }
 
-@media (min-width: 768px) {
-	.dreams {
-		&__text {
-			font-size: 1.8rem;
-		}
-	}
-}
+// @media (min-width: 768px) {
+// 	.dreams {
+// 		&__text {
+// 			font-size: 1.8rem;
+// 		}
+// 	}
+// }
 
-@media (min-width: 992px) {
-	.dreams {
-		&__box {
-			margin: 5em 0;
+// @media (min-width: 992px) {
+// 	.dreams {
+// 		&__box {
+// 			margin: 5em 0;
 
-			&-text {
-				display: flex;
-				flex-direction: column;
-				justify-content: flex-end;
-				margin-bottom: 2.5em;
-			}
-		}
+// 			&-text {
+// 				display: flex;
+// 				flex-direction: column;
+// 				justify-content: flex-end;
+// 				margin-bottom: 2.5em;
+// 			}
+// 		}
 
-		&__title {
-			font-size: 3.6rem;
-		}
+// 		&__title {
+// 			font-size: 3.6rem;
+// 		}
 
-		&__text {
-			font-size: 2.2rem;
-		}
-	}
-}
+// 		&__text {
+// 			font-size: 2.2rem;
+// 		}
+// 	}
+// }
