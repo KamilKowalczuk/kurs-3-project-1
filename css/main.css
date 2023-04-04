@@ -201,7 +201,7 @@ body {
   transform: rotateY(-180deg);
   opacity: 0;
 }
-.islands__card:hover .islands__card-img {
+.islands__card:hover .islands__card-info {
   transform: rotateY(0);
   opacity: 1;
 }
