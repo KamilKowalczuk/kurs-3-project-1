@@ -3,11 +3,14 @@
 
 @forward './base/reset';
 
+@forward './components/components';
+
+
 @forward './layout/navigation';
 @forward './layout/header';
 @forward './layout/dream';
 @forward './layout/hero';
 @forward './layout/islands';
 
-@forward './components/components';
+
 @forward './components/media.scss';

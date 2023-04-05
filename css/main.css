@@ -16,6 +16,84 @@ body {
   font-size: 1.6rem;
 }
 
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.white-block {
+  position: absolute;
+  height: 40px;
+  width: 60%;
+  background-color: #fff;
+}
+.white-block-left {
+  bottom: 0;
+  left: -50px;
+  transform: skew(45deg);
+}
+.white-block-right {
+  top: 0;
+  right: -50px;
+  transform: skew(45deg);
+}
+
+.btn-special-animation {
+  position: relative;
+  transition: background-color 0.3s;
+  overflow: hidden;
+  z-index: 0;
+}
+.btn-special-animation::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s;
+  z-index: -1;
+}
+.btn-special-animation:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.section-heading {
+  position: relative;
+  margin-bottom: 2em;
+  font-size: 3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  color: #1755e7;
+  letter-spacing: 2px;
+}
+
+.section-padding {
+  padding: 6em 2em;
+}
+
+@media (min-width: 768px) {
+  .section-heading {
+    font-size: 3.6rem;
+  }
+  .section-padding {
+    padding: 8em 2em;
+  }
+}
+@media (min-width: 992px) {
+  .section-heading {
+    font-size: 4.8rem;
+  }
+  .section-padding {
+    padding: 10em 2em;
+  }
+}
 .burger-btn {
   position: fixed;
   top: 20px;
@@ -234,85 +312,58 @@ body {
 .islands__card-img-info i {
   margin-right: 0.3em;
 }
-
-.wrapper {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1200px;
-}
-
-.white-block {
+.islands__card-info {
   position: absolute;
-  height: 40px;
-  width: 60%;
-  background-color: #fff;
-}
-.white-block-left {
+  top: 0;
   bottom: 0;
-  left: -50px;
-  transform: skew(45deg);
-}
-.white-block-right {
-  top: 0;
-  right: -50px;
-  transform: skew(45deg);
-}
-
-.btn-special-animation {
-  position: relative;
-  transition: background-color 0.3s;
-  overflow: hidden;
-  z-index: 0;
-}
-.btn-special-animation::before {
-  display: block;
-  content: "";
-  position: absolute;
-  top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.3s;
-  z-index: -1;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: radial-gradient(circle at top right, rgb(0, 78, 255) 0%, rgb(0, 212, 255) 100%);
+  border-radius: 8px;
+  opacity: 0;
+  transform: rotateY(180deg);
+  transition: transform 1s, opacity 1s;
 }
-.btn-special-animation:hover::before {
-  transform: scaleX(1);
-  transform-origin: left;
+.islands__card-info-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 1.2em;
+  font-family: "Dancing Script", cursive;
+  font-size: 2.8rem;
+}
+.islands__card-info-list {
+  margin: 0 auto;
+  width: 70%;
+  list-style: none;
+}
+.islands__card-info-list-item {
+  padding: 1em;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #eee;
+}
+.islands__card-info-list-item:last-child {
+  border-bottom: none;
+}
+.islands__card-info-btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2em;
+  padding: 1em;
+  border-radius: 8px;
+  width: 80%;
+  border: none;
+  background-color: #00ffaa;
+  cursor: pointer;
+}
+.islands__card-info-btn::before {
+  background-color: #0fe29c;
 }
 
-.section-heading {
-  position: relative;
-  margin-bottom: 2em;
-  font-size: 3rem;
-  font-weight: 300;
-  text-transform: uppercase;
-  text-align: center;
-  color: #1755e7;
-  letter-spacing: 2px;
-}
-
-.section-padding {
-  padding: 6em 2em;
-}
-
-@media (min-width: 768px) {
-  .section-heading {
-    font-size: 3.6rem;
-  }
-  .section-padding {
-    padding: 8em 2em;
-  }
-}
-@media (min-width: 992px) {
-  .section-heading {
-    font-size: 4.8rem;
-  }
-  .section-padding {
-    padding: 10em 2em;
-  }
-}
 @media (min-width: 576px) {
   .dreams__box {
     flex-direction: row;
@@ -362,6 +413,15 @@ body {
   .hero-img__text {
     font-size: 2.2rem;
   }
+  .islands__cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .islands__card {
+    margin: 1em;
+    width: 45%;
+  }
 }
 @media (min-width: 992px) {
   .nav__item {
@@ -402,5 +462,10 @@ body {
   .hero-img hr {
     width: 60%;
     max-width: 900px;
+  }
+}
+@media (min-width: 1100px) {
+  .islands__card {
+    width: 30%;
   }
 }/*# sourceMappingURL=main.css.map */
