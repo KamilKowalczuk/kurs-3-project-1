@@ -10,7 +10,7 @@
 @use '../layout/islands';
 @use '../layout/offers';
 @use '../layout/reviews';
-@use '../layout/contact';
+@use '../layout/footer';
 
 @use '../components/components';
 
@@ -130,6 +130,42 @@
 		&__card {
 			margin: 1em;
 			width: 45%;
+		}
+	}
+
+	.footer {
+		&__boxes {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__box-desktop {
+			display: block;
+		}
+
+		&__box {
+			margin: 2em;
+			width: 25%;
+
+			&:first-child {
+				width: 50%;
+			}
+		}
+
+		&__box-title {
+			font-size: 2.4rem;
+		}
+
+		&__box-list {
+			list-style: none;
+		}
+		&__box-list-item {
+			margin-bottom: 1em;
+
+			a {
+				color: $light-white;
+				text-decoration: none;
+			}
 		}
 	}
 }
