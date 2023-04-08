@@ -6,7 +6,7 @@
 .hero-img {
     position: relative;
     padding: 10em 2em;
-    @include heroImages('../img/island-small.jpg');
+    @include heroImages('../img/island-small.webp');
     text-align: center;
     color: $pure-white;
     overflow: hidden;

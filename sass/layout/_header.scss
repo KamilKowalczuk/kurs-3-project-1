@@ -13,7 +13,7 @@
 	height: 75vh;
 	text-align: center;
 	color: $pure-white;
-	@include heroImages('../img/palm-small.jpg');
+	@include heroImages('../img/palm-small.webp');
 	background-attachment: scroll;
 
 	&__heading {
